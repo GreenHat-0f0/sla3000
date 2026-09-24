@@ -57,7 +57,8 @@
         SELECT `nome`, `email`, `cidade` FROM `Tutores` WHERE `cidade` IN ('Belo Horizonte', 'Florianópolis', 'Porto Alegre');
 
     -- 18 - Listar o nome (do animal) e o custo das consultas que custaram entre R$ 100,00 e R$ 200,00 (Use o operador BETWEEN).
-
+        SELECT A.nome AS 'nome_ani', C.custo AS 'custo_cons' FROM `Animais` AS `A` INNER JOIN `Consultas` AS `C` ON A.idAnimal = C.idAnimal_fk AND `custo` BETWEEN 100 AND 200;
+        
     -- 19 - Listar todos os animais que não têm observações cadastradas (onde a coluna obs é nula).
         SELECT * FROM `Animais` WHERE `obs` IS NULL;
         
