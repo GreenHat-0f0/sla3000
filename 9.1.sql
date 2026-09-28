@@ -11,8 +11,11 @@
 
 -- 4. Cadastre o empregado Ana Souza, CPF 444.444.444-44, com cargo de "Gerente de Projetos".
     INSERT INTO `empregado` (`nome`, `cpf`, `cargo`) VALUES ('Ana Souza', '444.444.444-44', 'Gerente de Projetos'); 
+-- ////////////
+-- ////////////
+-- ////////////
 -- 5. Insira um projeto chamado "Sistema de Vendas", descrição "Plataforma para e-commerce", preço 15000.00, data de fim 2025-12-01, data estimada 2025-11-15, solicitação em 2025-09-10, gerenciado pela funcionária 444.444.444-44 e para o cliente 111.111.111-11.
-
+    INSERT INTO `projeto` (`nome`, `descricao`, `preco`, `data_fim`, `data_estimada`, `solicitacao`) VALUES ('Sistema de Vendas', 'Plataforma para e-commerce', 15000.00, '2025-12-01', '2025-11-15', '2025-09-10', '444.444.444-44', '111.111.111-11'); 
 -- 6. Insira um projeto chamado "Aplicativo Financeiro", descrição "Gestão de despesas pessoais", preço 12000.00, data de fim 2025-10-30, data estimada 2025-10-20, solicitação em 2025-09-12, gerenciado por 444.444.444-44 e para o cliente 222.222.222-22.
 
 -- 7. Cadastre a participação do empregado 333.333.333-33 no projeto 1 com 40 horas trabalhadas.
@@ -22,14 +25,14 @@
 -- 9. Cadastre a participação do empregado 333.333.333-33 no projeto 2 com 35 horas trabalhadas.
 
 -- 10. Insira um cliente chamado Pedro Gomes, CPF 555.555.555-55, telefone 48999887766.
-
+    INSERT INTO `cliente` (`nome`, `cpf`, `telefone`) VALUES ('Pedro Gomes', '555.555.555-55', 48999887766); 
 -- 11. Insira o empregado Lucas Andrade, CPF 666.666.666-66, cargo "Desenvolvedor Backend".
-
+    INSERT INTO `empregado` (`nome`, `cpf`, `cargo`) VALUES ('Lucas Andrade', '666.666.666-66', 'Desenvolvedor Backend'); 
 -- 12. Insira o projeto "Site Institucional", descrição "Página para empresa local", preço 5000.00, fim 2025-11-01, estimada 2025-10-25, solicitação em 2025-09-20, gerente 444.444.444-44, cliente 555.555.555-55.
 
 -- 13. Cadastre a participação do empregado 666.666.666-66 no projeto 3 com 50 horas trabalhadas.
 
 -- 14. Insira mais um cliente, CPF 777.777.777-77, nome "Fernanda Lima", telefone 48991231231.
-
+    INSERT INTO `cliente` (`nome`, `cpf`, `telefone`) VALUES ('Fernanda Lima', '777.777.777-77', 48991231231); 
 -- 15. Insira o projeto "Controle de Estoque", descrição "Sistema para loja de roupas", preço 8000.00, fim 2025-12-20, estimada 2025-12-05, solicitação em 2025-09-25, gerente 444.444.444-44, cliente 777.777.777-77.
 
