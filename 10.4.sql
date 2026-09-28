@@ -1,0 +1,31 @@
+-- Seção 1: Renomeação de Colunas (Aliases AS)
+-- O objetivo aqui é praticar a formatação da saída da consulta, tornando os cabeçalhos das colunas mais legíveis.
+-- 1 - Tutores: Selecione a coluna nome e a coluna cidade da tabela Tutores. Renomeie-as para 'Nome do Tutor' e 'Cidade'.
+-- 2 - Veterinários: Selecione o nome e a especialidade dos veterinários. Renomeie as colunas para 'Veterinário(a)' e 'Especialidade'.
+-- 3 - Animais e Peso: Liste o nome e o peso_kg de todos os animais. Renomeie as colunas para 'Nome do Animal' e 'Peso (kg)'.
+-- 4 - Consultas: Selecione a dtConsulta e o custo da tabela Consultas. Renomeie as colunas para 'Data da Consulta' e 'Valor (R$)'.
+
+-- Seção 2: Ordenação de Resultados (ORDER BY)
+-- O objetivo é praticar a classificação dos resultados em ordem ascendente (ASC) e descendente (DESC).
+-- 5 - Ordem Alfabética (ASC): Liste o nome de todos os Tutores em ordem alfabética (A-Z).
+-- 6 - Ordem Alfabética (DESC): Liste o nome de todos os Animais em ordem alfabética inversa (Z-A).
+-- 7 - Animais Mais Pesados (DESC): Liste o nome e o peso_kg dos animais, ordenados do mais pesado para o mais leve.
+-- 8 - Consultas Mais Baratas (ASC): Liste o motivo e o custo das consultas, ordenadas da mais barata para a mais cara.
+-- 9 - Animais Mais Novos (Data DESC): Liste o nome e a dtNascimento dos animais, ordenados do mais novo para o mais velho (data de nascimento mais recente primeiro).
+-- 10 - Animais Mais Velhos (Data ASC): Liste o nome e a dtNascimento dos animais, ordenados do mais velho para o mais novo (data de nascimento mais antiga primeiro).
+-- 11 - Consultas Recentes (Data/Hora DESC): Liste o motivo e a dtConsulta das consultas, ordenadas da mais recente para a mais antiga.
+-- 12 - Ordem Dupla: Liste os Animais ordenando primeiro pela especie (em ordem alfabética) e, para animais da mesma espécie, ordene pelo nome (também em ordem alfabética).
+
+-- Seção 3: Limitação de Resultados (LIMIT)
+-- O objetivo é praticar a restrição do número de linhas retornadas, essencial para "Top N" e paginação.
+-- 13 - Os 5 Primeiros: Selecione os 5 primeiros Animais cadastrados (use o idAnimal).
+-- 14 - Os 3 Primeiros: Selecione as 3 primeiras Consultas registradas na tabela (use a idConsulta).
+-- 15 - Paginação (Página 1): Simule uma página de resultados. Liste os Tutores, mas mostre apenas 2 por página. Exiba a "Página 1" (os dois primeiros).
+-- 16 - Paginação (Página 2): Usando a lógica do exercício anterior, exiba a "Página 2" da lista de Tutores (pule os 2 primeiros e mostre os 2 seguintes). Use a sintaxe LIMIT [offset], [count].
+
+-- Seção 4: Desafios Combinados (AS, ORDER BY, LIMIT)
+-- O objetivo é resolver problemas práticos combinando as três técnicas.
+-- 17 - O Animal Mais Pesado: Encontre o animal mais pesado da clínica. Exiba apenas o nome (como 'Animal Mais Pesado') e o peso_kg (como 'Peso (kg)').
+-- 18 - A Consulta Mais Cara: Qual foi a consulta de maior custo? Exiba o motivo (como 'Motivo'), o diagnostico (como 'Diagnóstico') e o custo (como 'Valor').
+-- 19 - Top 3 Animais Mais Novos: Liste os 3 animais mais novos (data de nascimento mais recente). Exiba o nome (como 'Nome'), a especie (como 'Espécie') e a dtNascimento (como 'Nascimento').
+-- 20 - As 2 Consultas Mais Antigas: Encontre as duas consultas mais antigas registradas. Exiba a dtConsulta (como 'Data') e o motivo (como 'Motivo').
