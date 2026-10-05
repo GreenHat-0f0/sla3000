@@ -72,7 +72,7 @@
 
 -- 18 - A Consulta Mais Cara: Qual foi a consulta de maior custo? Exiba o motivo (como 'Motivo'), o diagnostico (como 
 -- 'Diagnóstico') e o custo (como 'Valor').
-SELECT motivo AS 'Motivo', diagnostico AS 'Diagnóstico', custo AS 'Valor' FROM Consultas ORDER BY custo DESC LIMIT 1;
+    SELECT motivo AS 'Motivo', diagnostico AS 'Diagnóstico', custo AS 'Valor' FROM Consultas ORDER BY custo DESC LIMIT 1;
 
 -- 19 - Top 3 Animais Mais Novos: Liste os 3 animais mais novos (data de nascimento mais recente). Exiba o nome (como 
 -- 'Nome'), a especie (como 'Espécie') e a dtNascimento (como 'Nascimento').
@@ -80,4 +80,4 @@ SELECT motivo AS 'Motivo', diagnostico AS 'Diagnóstico', custo AS 'Valor' FROM 
 
 -- 20 - As 2 Consultas Mais Antigas: Encontre as duas consultas mais antigas registradas. Exiba a dtConsulta (como 'Data') 
 -- e o motivo (como 'Motivo').
-SELECT dtConsulta AS 'Data', motivo AS 'Motivo' FROM Consultas ORDER BY dtConsulta ASC LIMIT 2;
+    SELECT dtConsulta AS 'Data', motivo AS 'Motivo' FROM Consultas ORDER BY dtConsulta ASC LIMIT 2;
